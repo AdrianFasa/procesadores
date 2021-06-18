@@ -1,210 +1,471 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 @font-face {
     font-family: "hola";
-    src: url(fonts/hola.ttf);
+    src: url(fonts/cs_regular.ttf);
 }
 
-#titulo{
-    font-family: hola;
+h1{
     color: blue;
-    position: relative;
-    bottom: 140px;
-    left: 350px;
+    font-family: "hola";
+    text-align: center; 
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 70px;
+    padding: 15px;
 }
 #logo{
-    position: relative;
-    left: 60px;
-    top: 45px;
+    width: 160px;
+    height: 130px;
+    float: left;
 }
-#busqueda{
-    position: relative;
-    left: 850px;
-    bottom: 188px;
+#busqueda {
+    background-color: rgb(132, 149, 245);
+    padding: 12px 12px;
 }
 #inicio{
     position: relative;
     left: 1150px;
     bottom: 270px;
 }
-#contmenu{
+#borde{
+    width: 500px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+}
+ul, ol{
+    list-style: none;
+}
+.cat > li{
+    float: left;
+}
+.cat li a{
+    background-color: rgb(132, 149, 245);
+    color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+}
+.cat li a:hover{
+    background-color: cornflowerblue;
+}
+.cat li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.cat li:hover > ul{
+    display: block;
+}
+.cat li ul li{
     position: relative;
-    left: 280px;
-    bottom: 120px;
-    font-family: Calibri;
+}
+#carrito{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(132, 149, 245);
+    padding: 10px 12px;
+    float: right;
+}
+#carrito:hover{
+    background-color: cornflowerblue;
 }
 #seccion{
     position: relative;
     right: 180px;
 }
-
-#productos{
-    height: 1489px;
-    width: 1199px;
+.boton {
+    width: 100px; height: 30px;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+    float: right;
+   }
+   .boton:hover{
+    background-color: #888;
+   }
+   .boton p {
+    text-align: center;
+    font-size: 1em; 
+    font-weight:bold;
+    color: antiquewhite;
+    line-height: 1.6em;
+   }
+   #container{
+    background-color: E5E5E5;
+    width: 1320px;
+    padding: 1em;
+    overflow: hidden; 
     margin: auto;
-    position: relative;
-    bottom: 80px;
+   }
+   #imagen1{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto1{
+       border: 1px black solid;
+       width:250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen2{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto2{
+       border: 1px black solid;
+       width:250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen3{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto3{
+       border: 1px black solid;
+       width:250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen4{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto4{
+       border:1px black solid;
+       width:250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen5{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto5{
+       border:1px black solid;
+       width:250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen6{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto6{
+       border: 1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen7{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto7{
+       border:1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen8{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto8{
+       border:1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen9{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto9{
+       border:1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen10{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto10{
+       border:1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen11{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto11{
+       border:1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen12{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto12{
+       border: 1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen13{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto13{
+       border: 1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen14{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto14{
+       border:  1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen15{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto15{
+       border:  1px black solid ;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen16{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto16{
+       border: 1px black solid ;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen17{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto17{
+       border: 1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen18{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto18{
+       border: 1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen19{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto19{
+       border: 1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   #imagen20{
+       margin: 1em;
+       padding: 1em;
+       float: left;
+       border: ridge;
+       color: orangered;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   .foto20{
+       border:  1px black solid;
+       width: 250px;
+       height: 250px;
+       transition: all 500ms ease;
+   }
+   .foto1:hover{
+    transform: scale(1.2);
 }
-#imagen1{
-    height: 295px;
-    width: 297px;
-   
-    position: absolute; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto2:hover{
+    transform: scale(1.2);
 }
-#imagen2{
-    height: 295px;
-    width: 297px;
-    
-    position: absolute;
-    left: 300px; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto3:hover{
+    transform: scale(1.2);
 }
-#imagen3{
-    height: 295px;
-    width: 297px;
- 
-    position: absolute;  
-    left: 600px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto4:hover{
+    transform: scale(1.2);
 }
-#imagen4{
-    height: 295px;
-    width: 297px;
-  
-    float: right; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto5:hover{
+    transform: scale(1.2);
 }
-#imagen5{
-    height: 295px;
-    width: 297px;
-   
-    position: relative;
-    top: 298px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto6:hover{
+    transform: scale(1.2);
 }
-#imagen6{
-    height: 295px;
-    width: 297px;
-   
-    position: relative;
-    top: 1px;
-    left: 300px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto7:hover{
+    transform: scale(1.2);
 }
-#imagen7{
-    height: 295px;
-    width: 297px;
-   
-    position: relative;
-    left: 600px; 
-    bottom: 296px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto8:hover{
+    transform: scale(1.2);
 }
-#imagen8{
-    height: 295px;
-    width: 297px;
-    
-    position: relative;
-    left: 900px;
-    bottom: 593px; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto9:hover{
+    transform: scale(1.2);
 }
-#imagen9{
-    height: 295px;
-    width: 297px;
-   
-    position: relative;
-    bottom: 592px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto10:hover{
+    transform: scale(1.2);
 }
-#imagen10{
-    height: 295px;
-    width: 297px;
-   
-    position: absolute;
-    top: 596px;
-    left: 300px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto11:hover{
+    transform: scale(1.2);
 }
-#imagen11{
-    height: 295px;
-    width: 297px;
-   
-    position: absolute;
-    right: 300px;
-    top: 596px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto12:hover{
+    transform: scale(1.2);
 }
-#imagen12{
-    height: 295px;
-    width: 297px;
-   
-    position: absolute;
-    right: 0px;
-    top: 596px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto13:hover{
+    transform: scale(1.2);
 }
-#imagen13{
-    height: 295px;
-    width: 297px;
-   
-    position: relative;
-    bottom: 591px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}       
-#imagen14{
-    height: 295px;
-    width: 297px;
-   
-    position: relative;
-    bottom: 888px;
-    left: 300px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto14:hover{
+    transform: scale(1.2);
 }
-#imagen15{
-    height: 295px;
-    width: 297px;
-   
-    position: relative;
-    bottom: 1185px;
-    left: 600px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+.foto15:hover{
+    transform: scale(1.2);
 }
-#imagen16{
-    height: 295px;
-    width: 297px;
-   
-    position: relative;
-    bottom: 1482px;
-    left: 900px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.foto16:hover{
+    transform: scale(1.2);
 }
-#imagen17{
-    height: 295px;
-    width: 297px;
-    
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-}#imagen18{
-    height: 295px;
-    width: 297px;
-    
-    position: absolute;
-    bottom: 0px;
-    left: 300px;
-}#imagen19{
-    height: 295px;
-    width: 297px;
-   
-    position: absolute;
-    bottom: 0px;
-    left: 600px;
-}#imagen20{
-    height: 295px;
-    width: 297px;
-   
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+.foto17:hover{
+    transform: scale(1.2);
+}
+.foto18:hover{
+    transform: scale(1.2);
+}
+.foto19:hover{
+    transform: scale(1.2);
+}
+.foto20:hover{
+    transform: scale(1.2);
+}
+.fot{
+    margin: auto;
+    width: 1800px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+.copy{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
 }
