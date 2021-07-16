@@ -1,0 +1,271 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: rgba(230, 228, 228, 0.849);
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "fonts";
+
+}
+@font-face{
+    font-family: "fonts";
+    src: url("fonts/cs_regular.ttf");
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    padding: 20px 0 0 0;
+    background: #1d2124;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: -100px;
+}
+
+@media (min-width : 750px) {
+    header {
+        text-align: left;
+    }
+}
+.navegacion{
+	width: auto;
+	margin: auto;
+	background: rgb(255, 255, 255);
+    height: 50px;
+    text-align: center;
+}
+.menu1{
+    color: white;
+}
+.navegacion ul{
+	list-style: none;
+}
+
+.menu1 > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu1 > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #333333;
+	font-family: 'Open sans';
+	text-decoration: none;
+    font-weight: bolder;
+}
+
+.menu1 li a:hover{
+	color: #fbaf32;
+	transition: all .3s;
+}
+
+.submenu1{
+	position: absolute;
+	background: #333333;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.submenu1 li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu1 li:hover .submenu1{
+	visibility: visible;
+	opacity: 1;
+    position: absolute;
+    color: #fff;
+}
+
+@media (min-width: 500px) {
+    .barraPrincipal {
+    padding: 0; }
+  }
+.barraPrincipal{
+    float: left;
+    margin: auto;
+}
+.borrar-platilo {
+    background-color: #fbaf32;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:rgb(71, 71, 71);
+    font-weight: bold;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    height: 551px;
+}
+.encabezado {
+    margin: 30px 0;
+    color: white;
+}
+.submenu {
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background: #17181b;
+    padding: 20px;
+}
+.vacio {
+    padding: 10px;
+    background-color: #fbaf32;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.button {
+    color: rgb(255, 255, 255);
+}
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+}
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.barra {
+    padding: 20px 0;
+    background: #fbaf32;
+    background: -webkit-linear-gradient(left, #b95a00 0%,#ad5400 100% );
+}
+.barra p {
+    margin: 0;
+    color: white;
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom: 0;
+    }
+}
+
+.icono1 {
+    background-image: url(../img/icono1.png);
+}
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+.icono3 {
+    background-image: url(../img/icono3.png);
+}
+
+#lista-productos .row {
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+.agregar-carrito{
+    margin: 10px 0;
+}
+.card {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #1d2124;
+}
+@media (min-width:550px){
+    .card {
+        text-align: left;
+    }
+}
+.info-card {
+    padding: 10px 20px;
+    color: white;
+}
+.info-card p,.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.footer {
+    margin-top: 40px;
+    background: #1d2124;
+}
+
+.footer .menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.fot{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 2.0em;
+    color: white;
+    background-color: #1d2124;
+
+}
+.copy{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-top: 1px solid white;
+    line-height: 1.5em;
+    color: white;
+    background-color: #1d2124;
+}
+.td1{
+    text-align: center;
+}
